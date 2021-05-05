@@ -269,7 +269,7 @@ window.close()"""
 
 import io
 from PIL import Image
-a = (1,1)
+boardSize = 200
 
 class Chessboard:
     def __init__(self, graph, data):
@@ -277,19 +277,29 @@ class Chessboard:
         self.data = data
 
     def placeQueen(self, loc):#loc => 0 0 ~ 8 8
-        self.graph.DrawImage(data=self.data, location=(loc[0] * 50, loc[1] * 50 + 50))
+        self.graph.DrawImage(data=self.data, location=(loc[0] * boardSize/8, loc[1] * boardSize/8 + boardSize/8))
 
 layout = [[sg.Text("Chessboard")],
-          [sg.Graph(canvas_size=(400, 400), graph_bottom_left=(0, 0), graph_top_right=(400, 400), background_color='white', key='graph')],
+          [sg.Graph(canvas_size=(boardSize, boardSize), graph_bottom_left=(0, 0), graph_top_right=(boardSize, boardSize), background_color='white', key='graph'),
+          sg.Graph(canvas_size=(boardSize, boardSize), graph_bottom_left=(0, 0), graph_top_right=(boardSize, boardSize), background_color='white', key='graph2')],
           [sg.Button('Quit')]]
 window = sg.Window("Chess", layout, finalize=True)
 graph = window['graph']
+graph2 = window['graph2']
 for i in range(1, 8):
-    graph.DrawLine((0, 400/8*i), (400, 400/8*i))
-    graph.DrawLine((400/8*i, 0), (400/8*i, 400))
+    graph.DrawLine((0, boardSize/8*i), (boardSize, boardSize/8*i))
+    graph.DrawLine((boardSize/8*i, 0), (boardSize/8*i, boardSize))
+    graph2.DrawLine((0, boardSize / 8 * i), (boardSize, boardSize / 8 * i))
+    graph2.DrawLine((boardSize / 8 * i, 0), (boardSize / 8 * i, boardSize))
+
+for i in range(4):
+    for j in range(8):
+        graph.DrawRectangle(((boardSize/4*i+boardSize/8*j)%boardSize, boardSize/8+boardSize/8*j), (boardSize/8+(boardSize/4*i+boardSize/8*j)%boardSize, boardSize/8*j), fill_color='black')
+        graph2.DrawRectangle(((boardSize/4 * i + boardSize/8 * j) % boardSize, boardSize/8 + boardSize/8 * j), (boardSize/8 + (boardSize/4 * i + boardSize/8 * j) % boardSize, boardSize/8 * j),
+                            fill_color='black')
 
 img = Image.open('queen2.png')
-img.thumbnail((50, 50))
+img.thumbnail((boardSize/8, boardSize/8))
 bio = io.BytesIO()
 img.save(bio, format("PNG"))
 chess = Chessboard(graph, bio.getvalue())

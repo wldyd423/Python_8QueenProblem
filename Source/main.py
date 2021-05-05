@@ -17,4 +17,4 @@ if __name__ == '__main__':
 
 
 #import ManditoryHelloWorld
-import SelfAttemptGUI
+import ChessboardGUI
