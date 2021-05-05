@@ -28,6 +28,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHubProjectsDump\Python\Python_8QueenProblem\Source" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="ManditoryHelloWorld" type="PythonConfigurationType" factoryName="Python">
       <module name="Source" />
@@ -92,26 +97,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="737" y="178" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620134229888" />
+    <state x="509" y="445" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620226852999">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="509" y="445" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620226852999" />
     <state x="1063" y="290" key="FileChooserDialogImpl" timestamp="1620133642408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1063" y="290" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620133642408" />
-    <state width="1232" height="281" key="GridCell.Tab.0.bottom" timestamp="1620146961725">
+    <state width="1333" height="157" key="GridCell.Tab.0.bottom" timestamp="1620229839405">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1232" height="281" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620146961725" />
-    <state width="1232" height="281" key="GridCell.Tab.0.center" timestamp="1620146961725">
+    <state width="1333" height="157" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620229839405" />
+    <state width="1333" height="157" key="GridCell.Tab.0.center" timestamp="1620229839405">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1232" height="281" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620146961725" />
-    <state width="1232" height="281" key="GridCell.Tab.0.left" timestamp="1620146961725">
+    <state width="1333" height="157" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620229839405" />
+    <state width="1333" height="157" key="GridCell.Tab.0.left" timestamp="1620229839405">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1232" height="281" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620146961725" />
-    <state width="1232" height="281" key="GridCell.Tab.0.right" timestamp="1620146961725">
+    <state width="1333" height="157" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620229839405" />
+    <state width="1333" height="157" key="GridCell.Tab.0.right" timestamp="1620229839405">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1232" height="281" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620146961725" />
+    <state width="1333" height="157" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620229839405" />
     <state x="415" y="279" key="SettingsEditor" timestamp="1620138035700">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -203,3 +203,100 @@ window.close()
 #Made this simple program to test canvas. Maybe use it for more interesting projects
 #Maybe add collision between balls? or even magnetic interaction?
 #End of Tutorial Code 4
+
+##### NOW LETS TRY MAKING SOMETHING
+
+#Lets make a chess board
+"""from PIL import Image
+import io
+queen = Image.open("queen2.png")
+queen.thumbnail((50, 50))
+bio = io.BytesIO()
+queen.save(bio, format("PNG"))
+img = sg.Image(data=bio.getvalue())
+layout = [[sg.Text("ChessBoard")],
+          [sg.Canvas(size=(400, 400), background_color='white', key='canvas')],
+          [sg.Button('Quit')],
+          [sg.Graph(canvas_size=(400, 400), graph_top_right=(400,400), graph_bottom_left=(0,0), key='graph')]]
+
+window = sg.Window('ChessBoard', layout, finalize=True)
+canvas = window['canvas'].TKCanvas
+graph = window['graph']
+graph.DrawImage(data=bio.getvalue(), location=(0, 400))
+graph.BackgroundColor = 'white'
+for i in range(1, 8):
+    canvas.create_line(0, 400/8*i, 400, 400/8*i, fill='black')
+    canvas.create_line(400/8*i, 0, 400/8*i, 400, fill='black')
+while 1:
+    event, values = window.read(timeout=0)
+    if event == sg.WINDOW_CLOSED or event =='Quit':
+        break
+window.close()"""
+
+#lets try that again
+"""import io
+from PIL import Image
+queen = Image.open("queen2.png")
+queen.thumbnail((50, 50))
+bio = io.BytesIO()
+queen.save(bio, format("PNG"))
+layout = [[sg.Text("Chess Board")],
+          [sg.Graph(canvas_size=(400, 400), graph_bottom_left=(0,0), graph_top_right=(400,400), background_color='white', key='graph')],
+          [sg.Button('Quit')]]
+window = sg.Window("Chess", layout, finalize=True)
+graph = window['graph']
+
+coord = []
+
+for i in range(0, 8):
+    for j in range(1, 9):
+        #print(f"({50 * i},{50 * j})")
+        coord.append((50*i, 50*j))
+
+for i in range(1, 8):
+    graph.DrawLine((0, 400/8*i), (400, 400/8*i))
+    graph.DrawLine((400/8*i, 0), (400/8*i, 400))
+for element in coord:
+    graph.DrawImage(data=bio.getvalue(), location=element)
+while 1:
+    event, values = window.read(timeout=0)
+    if event == sg.WINDOW_CLOSED or event == 'Quit':
+        break
+        
+window.close()"""
+
+#Now that kinda worked but lets do it a little better
+
+import io
+from PIL import Image
+a = (1,1)
+
+class Chessboard:
+    def __init__(self, graph, data):
+        self.graph = graph
+        self.data = data
+
+    def placeQueen(self, loc):#loc => 0 0 ~ 8 8
+        self.graph.DrawImage(data=self.data, location=(loc[0] * 50, loc[1] * 50 + 50))
+
+layout = [[sg.Text("Chessboard")],
+          [sg.Graph(canvas_size=(400, 400), graph_bottom_left=(0, 0), graph_top_right=(400, 400), background_color='white', key='graph')],
+          [sg.Button('Quit')]]
+window = sg.Window("Chess", layout, finalize=True)
+graph = window['graph']
+for i in range(1, 8):
+    graph.DrawLine((0, 400/8*i), (400, 400/8*i))
+    graph.DrawLine((400/8*i, 0), (400/8*i, 400))
+
+img = Image.open('queen2.png')
+img.thumbnail((50, 50))
+bio = io.BytesIO()
+img.save(bio, format("PNG"))
+chess = Chessboard(graph, bio.getvalue())
+chess.placeQueen((1, 1))
+chess.placeQueen((7, 7))
+while 1:
+    event, value = window.read(timeout=0)
+    if event == sg.WINDOW_CLOSED or event == 'Quit':
+        break
+window.close()
