@@ -63,6 +63,9 @@ class ChessboardGUI:
 
 
 
+
+
+
 ###
 ###TEST CODE PART
 ###
