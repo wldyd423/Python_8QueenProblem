@@ -9,11 +9,12 @@ import PySimpleGUI as sg
 import ChessboardGUI as cg
 import io
 from PIL import Image
+from random import choice
 
 BoardSize = 400
 
 db = Debugging.SimpleDebuger()
-db.DEBUG_ON = True
+db.DEBUG_ON = False
 
 
 class SimpleSolution:
@@ -64,44 +65,46 @@ class SimpleSolution:
         return False
 
 
-d = SimpleSolution()
-from random import choice
-
+"""d = SimpleSolution()
 repetition_count = 0
-
 placement = dict([])
 ss = SimpleSolution()
-queens_placed = 0
-while queens_placed < 8:
-    print(queens_placed)
-    #arr = ss.queen_position
-    #print(f"Array setup {arr}")
-    try:
-        placement[queens_placed] = choice([i for i in range(0, 8) if i not in placement.values()])
-    except:
-        print("Break by exception")
-        break
-    ss.append_queen(placement[queens_placed])
-
-    if not ss.check_attack():
-        print("Found attack")
-        print(placement)
-        queens_placed -= 1
-        ss.goback()
-        #ss.force_set(arr)
-        repetition_count += 1
-        if repetition_count > 5:
-            print("break by repetition")
+trial = 0
+while trial < 3000:
+    print(f"TRIAL {trial}")
+    queens_placed = 0
+    while queens_placed < 8:
+        print(queens_placed)
+        #arr = ss.queen_position
+        #print(f"Array setup {arr}")
+        try:
+            placement[queens_placed] = choice([i for i in range(0, 8) if i not in placement.values()])
+        except:
+            print("Break by exception")
             break
-    else:
-        repetition_count = 0
-    queens_placed += 1
+        ss.append_queen(placement[queens_placed])
 
+        if not ss.check_attack():
+            print("Found attack")
+            print(placement)
+            queens_placed -= 1
+            ss.goback()
+            #ss.force_set(arr)
+            repetition_count += 1
+            if repetition_count > 5:
+                print("break by repetition")
+                break
+        else:
+            repetition_count = 0
+        queens_placed += 1
+    if queens_placed == 8:
+        break
+    trial += 1
+if trial == 3000:
+    print("Break by trial limit")
 
 
 print(ss.queen_position)
-
-
 
 
 img = Image.open('queen2.png')
@@ -119,4 +122,8 @@ while 1:
     if event == sg.WINDOW_CLOSED or event == 'Quit':
         break
 
-k.window.close()
+k.window.close()"""
+
+
+#This is a horrible solution run it enough times you would get? a solution
+#Problem is its not exploring all possible solutions and repeating certain solutions

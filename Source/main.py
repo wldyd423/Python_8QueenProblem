@@ -1,3 +1,2 @@
-import ChessboardGUI
-import SimpleSolution
+import SimpleButABetterSolution
 
