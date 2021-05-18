@@ -1,2 +1,2 @@
-import SimpleButABetterSolution
-
+import SimpleSolutionForKColumns
+#import SimpleButABetterSolution

@@ -151,7 +151,7 @@ while 1:
 
 better.printboard()
 """
-sol = 0
+"""sol = 0
 for col0 in better.makerange(0):
     better.place((0, col0))
     for col1 in better.makerange(1):
@@ -178,4 +178,10 @@ for col0 in better.makerange(0):
                 better.takeoff(3)
             better.takeoff(2)
         better.takeoff(1)
-    better.takeoff(0)
+    better.takeoff(0)"""
+
+better.place((1,1))
+better.place((2,3))
+better.printboard()
+for i in range(8):
+    print(better.makerange(i))
