@@ -141,7 +141,7 @@ for element in fill_sequence:
 
 
 
-col = 0
+"""col = 0
 while 1:
     currange = better.makerange(col)
     if len(currange) == 0:
@@ -150,3 +150,32 @@ while 1:
     col += 1
 
 better.printboard()
+"""
+sol = 0
+for col0 in better.makerange(0):
+    better.place((0, col0))
+    for col1 in better.makerange(1):
+        better.place((1, col1))
+        for col2 in better.makerange(2):
+            better.place((2, col2))
+            for col3 in better.makerange(3):
+                better.place((3, col3))
+                for col4 in better.makerange(4):
+                    better.place((4, col4))
+                    for col5 in better.makerange(5):
+                        better.place((5, col5))
+                        for col6 in better.makerange(6):
+                            better.place((6, col6))
+                            for col7 in better.makerange(7):
+                                better.place((7, col7))
+                                sol += 1
+                                print(sol)
+                                better.printboard()
+                                better.takeoff(7)
+                            better.takeoff(6)
+                        better.takeoff(5)
+                    better.takeoff(4)
+                better.takeoff(3)
+            better.takeoff(2)
+        better.takeoff(1)
+    better.takeoff(0)
