@@ -1,2 +1,3 @@
-import SimpleSolutionForKColumns
+#import SimpleSolutionForKColumns
 #import SimpleButABetterSolution
+import ChessboardGUI
