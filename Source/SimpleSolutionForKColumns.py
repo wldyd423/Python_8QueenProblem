@@ -9,6 +9,10 @@ class KColumnChessBoard:
         print("init!")
         self.sol = 0
         self.fir = 0
+        self.valid_solution = None
+
+    def getList(self):
+        return self.pieces
 
     def reset_attack(self):
         self.attack = np.zeros((self.k, self.k)).astype(int).tolist()
@@ -91,10 +95,19 @@ class KColumnChessBoard:
             if col + 1 == self.k:
                 self.print_board()
                 self.fir = 1
+                ret = []
+                x = 0
+                for element in self.pieces:
+                    ret.append((x, element.index(1)))
+                    x+=1
+                print(ret)
+                self.valid_solution = ret
+                print(self.valid_solution)
+                return ret
             self.find_first_solution(col + 1)
             self.take_off(col)
 
 
-better = KColumnChessBoard(20)
+"""better = KColumnChessBoard(20)
 better.find_first_solution(0)
-print(better.sol)
+print(better.sol)"""
