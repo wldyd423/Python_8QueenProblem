@@ -11,7 +11,7 @@ class FitnessFunction:
 
     def test_for_solution(self, boards):
         temp = self.bestboard(boards)
-        if self.getscore(temp) == self.bestcase-1:
+        if self.getscore(temp) == self.bestcase:
             self.solution = temp
             return True
         return False

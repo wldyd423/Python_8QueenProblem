@@ -2,8 +2,8 @@ from Source.GeneticAlgorithm import BoardGeneration as bg
 from Source.GeneticAlgorithm import FitnessFunction as ff
 
 
-board = bg.KQueens(20)
-fitness = ff.FitnessFunction(20)
+board = bg.KQueens(8)
+fitness = ff.FitnessFunction(8)
 
 
 
