@@ -24,6 +24,56 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Source/main.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.geneticalg">
+    <configuration name="geneticalg" type="PythonConfigurationType" factoryName="Python">
+      <module name="Python_8QueenProblem" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jiyon\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source/GeneticAlgorithm" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/GeneticAlgorithm/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+      <module name="Python_8QueenProblem" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jiyon\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.geneticalg" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -37,13 +87,35 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="541" y="412" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620112739560">
+    <state x="541" y="412" width="1092" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623064982604">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="541" y="412" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620112739560" />
-    <state x="1331" y="550" key="FileChooserDialogImpl" timestamp="1620112781637">
+    <state x="541" y="412" width="1092" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1623064982604" />
+    <state x="1331" y="550" key="FileChooserDialogImpl" timestamp="1623064979798">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1331" y="550" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620112781637" />
+    <state x="1331" y="550" key="FileChooserDialogImpl/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1623064979798" />
+    <state width="1148" height="204" key="GridCell.Tab.0.bottom" timestamp="1623080526621">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1148" height="204" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1623080526621" />
+    <state width="1148" height="204" key="GridCell.Tab.0.center" timestamp="1623080526621">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1148" height="204" key="GridCell.Tab.0.center/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1623080526621" />
+    <state width="1148" height="204" key="GridCell.Tab.0.left" timestamp="1623080526620">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1148" height="204" key="GridCell.Tab.0.left/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1623080526620" />
+    <state width="1148" height="204" key="GridCell.Tab.0.right" timestamp="1623080526621">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1148" height="204" key="GridCell.Tab.0.right/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1623080526621" />
+    <state x="922" y="407" width="998" height="708" key="SettingsEditor" timestamp="1623065255294">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="922" y="407" width="998" height="708" key="SettingsEditor/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1623065255294" />
   </component>
 </project>

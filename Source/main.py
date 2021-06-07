@@ -1,8 +1,8 @@
 #import SimpleSolutionForKColumns
 #import SimpleButABetterSolution
 import PySimpleGUI as sg
-import ChessboardGUI as cg
-import SimpleSolutionForKColumns as ssfk
+from Source import ChessboardGUI as cg
+from Source import SimpleSolutionForKColumns as ssfk
 import io
 from PIL import Image
 

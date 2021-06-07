@@ -44,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,8 +95,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.ManditoryHelloWorld" />
+      <item itemvalue="Python.main" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -135,10 +135,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="509" y="445" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620226852999" />
-    <state x="1063" y="290" key="FileChooserDialogImpl" timestamp="1620133642408">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="3357" y="539" key="FileChooserDialogImpl" timestamp="1623041132787">
+      <screen x="2560" y="324" width="1920" height="1040" />
     </state>
     <state x="1063" y="290" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620133642408" />
+    <state x="3357" y="539" key="FileChooserDialogImpl/0.0.2560.1400/2560.324.1920.1040@2560.324.1920.1040" timestamp="1623041132787" />
     <state width="1678" height="122" key="GridCell.Tab.0.bottom" timestamp="1622885568130">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -167,9 +168,10 @@
     <state width="1921" height="234" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620750802893" />
     <state width="1678" height="122" key="GridCell.Tab.0.right/0.0.2560.1400/2560.324.1920.1040@0.0.2560.1400" timestamp="1622885568130" />
     <state width="1280" height="123" key="GridCell.Tab.0.right/0.0.2560.1400/2560.324.1920.1040@2560.324.1920.1040" timestamp="1621786231288" />
-    <state x="415" y="279" key="SettingsEditor" timestamp="1620138035700">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="2871" y="531" key="SettingsEditor" timestamp="1623041027322">
+      <screen x="2560" y="324" width="1920" height="1040" />
     </state>
     <state x="415" y="279" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1620138035700" />
+    <state x="2871" y="531" key="SettingsEditor/0.0.2560.1400/2560.324.1920.1040@2560.324.1920.1040" timestamp="1623041027322" />
   </component>
 </project>
