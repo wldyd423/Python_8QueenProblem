@@ -6,7 +6,6 @@ board = bg.KQueens(8)
 fitness = ff.FitnessFunction(8)
 
 
-
 while 1:
     boards = board.get_boards()
     print(fitness.get_bestcase())
