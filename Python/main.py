@@ -6,27 +6,49 @@ class EightQueens:
     def __init__(self, size):
         self.size = size
         self.chessboard = np.zeros(self.size)
+        self.count = 0
 
         for idx, position in enumerate(self.chessboard):
             self.chessboard[idx] = rd.randrange(0, self.size, 1)
 
-    def hit(self, x, y, i):
+    def hit_verbose(self, x, y, i):
         print(f"[{y}] Hit between line {x} and line {i}")
+
+    def hit(self):
+        self.count += 1
 
     def evaluate(self):
         print(self.chessboard)
         for x, y in enumerate(self.chessboard):
             for i in range(x+1, self.size):
                 if(self.chessboard[i] == y):
-                    self.hit(x, "ide", i)
+                    self.hit()
+                    # self.hit_verbose(x, "ide", i)
                     # print("hit")
                 elif(self.chessboard[i] == y+i-x):
-                    self.hit(x, "upp", i)
+                    self.hit()
+                    # self.hit_verbose(x, "upp", i)
                     # print("hit")
                 elif(self.chessboard[i] == y-i+x):
-                    self.hit(x, "low", i)
+                    self.hit()
+                    # self.hit_verbose(x, "low", i)
                     # print("hit")
+        return self.count
 
 
-e = EightQueens(8)
-e.evaluate()
+class GeneticAlgorithm:
+    def __init__(self, population) -> None:
+        self.population = population
+        self.boardSize = 8
+
+    def populate(self):
+        for i in range(self.population):
+            temp = EightQueens(self.boardSize)
+            print(temp.evaluate())
+
+
+# e = EightQueens(8)
+# print(e.evaluate())
+
+set = GeneticAlgorithm(10)
+set.populate()
