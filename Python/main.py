@@ -40,15 +40,17 @@ class GeneticAlgorithm:
     def __init__(self, population) -> None:
         self.population = population
         self.boardSize = 8
+        self.verbose = True
+        self.populate()
 
     def populate(self):
         for i in range(self.population):
             temp = EightQueens(self.boardSize)
-            print(temp.evaluate())
+            if self.verbose:
+                print(temp.evaluate())
 
 
 # e = EightQueens(8)
 # print(e.evaluate())
 
 set = GeneticAlgorithm(10)
-set.populate()
