@@ -1,15 +1,14 @@
 CC = gcc
-TMP = hello.o
-TMPTARGET = hello
-DEPS :=
+OBJ = main.o queen.o
+TARGET = main
 CFLAGS :=
 
-%.o:%.c $(DEPS)
+%.o:%.c 
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-$(TMPTARGET): $(TMP)
-	echo "This is some mandatory shit"
-	$(CC) $^ -o $@
 
-clean: 
-	rm *.o $(TMPTARGET)
+$(TARGET): $(OBJ)
+	$(CC) $^ -o $@
+	rm -f *.o *~ core
+	@echo "Build complete"
+
