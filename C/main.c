@@ -1,9 +1,7 @@
 //Mandatory
-#include <stdio.h>
 #include "queen.h"
-#include <unistd.h>
 #include "util.h"
-
+int DEBUG_VERBOSE = 0;
 
 int main(int argc, char* argv[]){
     hello();
@@ -26,6 +24,8 @@ int main(int argc, char* argv[]){
         }
     }
 
-    DEBUG("does this work? %s, %s\n", "hi", "yo");
+    printBlankBoard(8);
+
+    // printBlankBoard(16);
     return 0;
 }

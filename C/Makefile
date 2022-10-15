@@ -1,7 +1,7 @@
 CC = gcc
-OBJ = main.o queen.o
+OBJ = main.o queen.o util.o
 TARGET = main
-CFLAGS :=
+CFLAGS := -Wall -w -Wformat=0
 
 %.o:%.c 
 	$(CC) -c -o $@ $< $(CFLAGS)
