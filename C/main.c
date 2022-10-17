@@ -24,8 +24,11 @@ int main(int argc, char* argv[]){
         }
     }
 
-    printBlankBoard(8);
+    //printBlankBoard(8);
 
+    int queenState[8] = {1,5,4,1,2,5,7,8};
+
+    findDispute(queenState, 8);
     // printBlankBoard(16);
     return 0;
 }

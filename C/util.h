@@ -8,7 +8,7 @@
 
 
 #define DEBUG(fmt, ...)\
-    do { if (DEBUG_VERBOSE) fprintf(stderr, "[DEBUG]  " fmt, ##__VA_ARGS__); } while(0)
+    do { if (DEBUG_VERBOSE) fprintf(stderr, "[DEBUG]  " fmt"\n", ##__VA_ARGS__); } while(0)
 
 
 #define EXIT_FAILURE 1

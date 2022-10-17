@@ -12,3 +12,5 @@ $(TARGET): $(OBJ)
 	rm -f *.o *~ core
 	@echo "Build complete"
 
+run:
+	./main -v

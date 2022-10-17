@@ -5,5 +5,7 @@
 #define MANDATORY  "Hello, World!\n"
 void hello();
 void printBlankBoard(int);
-
+void drawBoard(int*, int);
+void drawLine(int*, int, int);
+int findDispute(int* , int);
 #endif
